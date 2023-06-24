@@ -5,32 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Mihovilcevic</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/drawer.css" />
     <link rel="shortcut icon" href="/img/MM.png">
 </head>
 <body>
     <header>
+        <div id="drawer-container">
+          <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+          <nav id="drawer">
+              <ul>
+                  <li class="bullets"><a href="/index.html">INICIO</a></li>
+                  <li class="bullets"><a href="/pages/estudio.html">ESTUDIO</a></li>
+                  <li class="bullets">
+                    <a href="/pages/servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="bullets">
+                    <a href="/pages/link.html">LINKS DE INTERES</a>
+                  </li>
+                  <li class="bullets"><a href="/pages/contacto.html">CONTACTO</a></li>
+                </ul>
+          </nav>
+        </div>
         <nav class="tab-header">
-                <a href="/index.html"><img src="/img/Logo Mihovilcevic vertical.png" class="logo-sup" alt="Logo Mihovilcevic"></a>
-                <div id="menu">
-                    <ul>
-                        <li class="bullets"><a href="/index.html">INICIO</a></li>
-                        <li class="bullets"><a href="/pages/estudio.html">ESTUDIO</a></li>
-                        <li class="bullets"><a href="/pages/servicios.html">SERVICIOS</a></li>
-                        <li class="bullets"><a href="/pages/link.html">LINKS DE INTERES</a></li>
-                        <li class="bullets"><a href="/pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
+          <a href="/index.html"
+            ><img
+              src="/img/Logo Mihovilcevic vertical.png"
+              class="logo-sup"
+              alt="Logo Mihovilcevic"
+          /></a>
+          <div id="menu" class="menuHeader">
+            <ul>
+              <li class="bullets"><a href="/index.html">INICIO</a></li>
+              <li class="bullets"><a href="/pages/estudio.html">ESTUDIO</a></li>
+              <li class="bullets">
+                <a href="/pages/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="bullets">
+                <a href="/pages/link.html">LINKS DE INTERES</a>
+              </li>
+              <li class="bullets"><a href="/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
-       <h2 class="main-content-header">
+        <h2 class="main-content-header">
         ¿QUIENES SOMOS?
-       </h2>
-
-       <div class="studio-container">
+        </h2>
+        <div class="studio-container">
             <div class="studio-left-container">
-                <div>
+                <div class="studio-title-container">
                     <h2 class="studio-title">NUESTRA HISTORIA</h2>
                     <p class="studio-text">
                         El estudio contable e impositivo Mihovilcevic tuvo sus orígenes en el año 1993 de la mano de su fundador Antonio Luis Mihovilcevic, Contador Público graduado de la Facultad de Ciencias Económicas perteneciente a la Universidad de Buenos Aires (UBA). Luego de una vasta experiencia en empresas multinacionales desempeñando cargos de alto rango en el sector de impuestos y contabilidad, y de ejercer como profesor en la Universidad de Tres de Febrero (UNTREF) decidió lanzarse como profesional independiente.
@@ -65,20 +91,22 @@
                 <img src="/img/Socios.jpg" class="studio-image">
             </div>
         </div>
-
     </main>
     <footer class="footer">
-        <div>
-            <a href="/index.html"><img src="/img/Logo Mihovilcevic horizontal.png" class="logo-inf" alt="Logo Mihovilcevic"></a> 
-        </div>
-            <ul class="menu">
-                <li>Dirección: Moliere 1554 dto. 2 </li>
-                <li>CABA - Buenos Aires (1408)</li>
-                <li>Telefono: (54 11) 2872-1351</li>
-                <li>Mail: lm.estudiocble@gmail.com</li>
-                <li class="name">Antonio Luis Mihovilcevic - Contador Publico (UBA)</li>
-                <li>Nicolas Nahuel Mihovilcevic - Contador Publico (UADE)</li>
-            </ul>
+      <a href="/index.html" class="footerLogo"
+        ><img
+          src="/img/Logo Mihovilcevic horizontal.png"
+          class="logo-inf"
+          alt="Logo Mihovilcevic"
+      /></a>
+      <ul class="menu">
+        <li>Dirección: Moliere 1554 dto. 2</li>
+        <li>CABA - Buenos Aires (1408)</li>
+        <li>Telefono: (54 11) 2872-1351</li>
+        <li>Mail: lm.estudiocble@gmail.com</li>
+        <li class="name">Antonio Luis Mihovilcevic - Contador Publico (UBA)</li>
+        <li>Nicolas Nahuel Mihovilcevic - Contador Publico (UADE)</li>
+      </ul>
     </footer>
 </body>
 </html>

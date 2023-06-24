@@ -1,0 +1,117 @@
+/* DRAWER STYLES */
+@media only screen and (min-width: 375px) {
+  #drawer-container {
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #drawer-container {
+    visibility: hidden;
+  }
+}
+
+* {
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#drawer-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+#drawer-toggle-label {
+  left: 15px;
+  top: 15px;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  background: #AD1D25;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+#drawer-toggle-label:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background: white;
+  left: 13px;
+  top: 18px;
+  box-shadow: 0 6px 0 white, 0 12px 0 white;
+}
+
+#drawer {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  height: 100%;
+  width: 250px;
+  background: #AD1D25;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+#page-content {
+  margin-left: 0px;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px;
+}
+
+#drawer-toggle:checked ~ #drawer-toggle-label,
+#drawer-toggle:checked ~ header {
+  left: 300px;
+}
+
+#drawer-toggle:checked ~ #drawer {
+  left: 0px;
+}
+
+#drawer-toggle:checked ~ #page-content {
+  margin-left: 300px;
+}
+
+#drawer ul {
+  list-style-type: none;
+}
+
+#drawer ul a {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 0.05vh solid white;
+}
+
+#drawer ul a:hover {
+  color: white;
+}
+
+@media all and (max-width: 350px) {
+  #drawer-toggle:checked ~ #drawer-toggle-label {
+    height: 100%;
+    width: 50px;
+  }
+  #drawer-toggle:checked ~ #drawer-toggle-label,
+  #drawer-toggle:checked ~ header {
+    left: calc(100% - 50px);
+  }
+  #drawer-toggle:checked ~ #drawer {
+    width: calc(100% - 50px);
+    padding: 20px;
+  }
+  #drawer-toggle:checked ~ #page-content {
+    margin-left: calc(100% - 50px);
+  }
+}
+
+/*# sourceMappingURL=drawer.css.map */

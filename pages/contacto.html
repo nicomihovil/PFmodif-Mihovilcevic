@@ -5,33 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Mihovilcevic</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/drawer.css">
     <link rel="shortcut icon" href="/img/MM.png">
 </head>
 <body>
     <header>
+        <div id="drawer-container">
+          <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+          <nav id="drawer">
+              <ul>
+                  <li class="bullets"><a href="/index.html">INICIO</a></li>
+                  <li class="bullets"><a href="/pages/estudio.html">ESTUDIO</a></li>
+                  <li class="bullets">
+                    <a href="/pages/servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="bullets">
+                    <a href="/pages/link.html">LINKS DE INTERES</a>
+                  </li>
+                  <li class="bullets"><a href="/pages/contacto.html">CONTACTO</a></li>
+                </ul>
+          </nav>
+        </div>
         <nav class="tab-header">
-                <a href="/index.html"><img src="/img/Logo Mihovilcevic vertical.png" class="logo-sup" alt="Logo Mihovilcevic"></a>
-                <div id="menu">
-                    <ul>
-                        <li class="bullets"><a href="/index.html">INICIO</a></li>
-                        <li class="bullets"><a href="/pages/estudio.html">ESTUDIO</a></li>
-                        <li class="bullets"><a href="/pages/servicios.html">SERVICIOS</a></li>
-                        <li class="bullets"><a href="/pages/link.html">LINKS DE INTERES</a></li>
-                        <li class="bullets"><a href="/pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
+          <a href="/index.html"
+            ><img
+              src="/img/Logo Mihovilcevic vertical.png"
+              class="logo-sup"
+              alt="Logo Mihovilcevic"
+          /></a>
+          <div id="menu" class="menuHeader">
+            <ul>
+              <li class="bullets"><a href="/index.html">INICIO</a></li>
+              <li class="bullets"><a href="/pages/estudio.html">ESTUDIO</a></li>
+              <li class="bullets">
+                <a href="/pages/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="bullets">
+                <a href="/pages/link.html">LINKS DE INTERES</a>
+              </li>
+              <li class="bullets"><a href="/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <h2 class="main-content-header">
             CONTACTO
         </h2>
-
         <div class="contact-container">
             <div class="contact-form-container">
                 <h2>Formulario de contacto</h2>
-
                 <form action="/action_page.php" class="contact-form">
                     <input class="contact-input" type="text" id="name" name="name" value="" placeholder="Nombre">
                     <input class="contact-input" type="text" id="email" name="email" value="" placeholder="Email">
@@ -40,7 +65,7 @@
                     <input class="contact-submit" type="submit" value="ENVIAR" disabled>
                 </form> 
             </div>
-            <div>
+            <div class="contact-menu-container">
                 <p class="contact-menu-title">Consultanos lo que necesites, nosotros te responderemos a la brevedad.
                 </p>
                 <ul class="contact-menu">
@@ -53,20 +78,22 @@
                 </ul>
             </div>
         </div>        
-
     </main>
     <footer class="footer">
-        <div>
-            <a href="/index.html"><img src="/img/Logo Mihovilcevic horizontal.png" class="logo-inf" alt="Logo Mihovilcevic"></a> 
-        </div>
-            <ul class="menu">
-                <li>Dirección: Moliere 1554 dto. 2 </li>
-                <li>CABA - Buenos Aires (1408)</li>
-                <li>Telefono: (54 11) 2872-1351</li>
-                <li>Mail: lm.estudiocble@gmail.com</li>
-                <li class="name">Antonio Luis Mihovilcevic - Contador Publico (UBA)</li>
-                <li>Nicolas Nahuel Mihovilcevic - Contador Publico (UADE)</li>
-            </ul>
-    </footer>
+        <a href="/index.html" class="footerLogo"
+          ><img
+            src="/img/Logo Mihovilcevic horizontal.png"
+            class="logo-inf"
+            alt="Logo Mihovilcevic"
+        /></a>
+        <ul class="menu">
+          <li>Dirección: Moliere 1554 dto. 2</li>
+          <li>CABA - Buenos Aires (1408)</li>
+          <li>Telefono: (54 11) 2872-1351</li>
+          <li>Mail: lm.estudiocble@gmail.com</li>
+          <li class="name">Antonio Luis Mihovilcevic - Contador Publico (UBA)</li>
+          <li>Nicolas Nahuel Mihovilcevic - Contador Publico (UADE)</li>
+        </ul>
+      </footer>
 </body>
 </html>
