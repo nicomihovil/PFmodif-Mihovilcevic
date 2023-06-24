@@ -37,10 +37,6 @@ body {
     background-color: none;
     font-size: 0.9rem;
     padding-block: 3vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
   }
   @include large {
     text-align: left;
@@ -104,7 +100,7 @@ a:link {
   @include small {
     display: flex;
     flex-direction: column;
-    background: url('/img/Fondo.jpg') no-repeat center center;
+    background: url('./img/Fondo.jpg') no-repeat center center;
     background-size: cover;
     height: 20vh;
     align-items: center;
