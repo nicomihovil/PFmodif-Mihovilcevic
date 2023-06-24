@@ -1,5 +1,3 @@
-/* DRAWER STYLES */
-
 @use  './mixins.scss' as *;
 
 #drawer-container {
@@ -11,12 +9,12 @@
   }
 }
 
-* {
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
+// * {
+//   -webkit-transition: 0.25s ease-in-out;
+//   -moz-transition: 0.25s ease-in-out;
+//   -o-transition: 0.25s ease-in-out;
+//   transition: 0.25s ease-in-out;
+// }
 
 #drawer-toggle {
   position: absolute;
@@ -97,7 +95,7 @@
   color: white;
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 375px) {
   #drawer-toggle:checked ~ #drawer-toggle-label {
     height: 100%;
     width: 50px;
