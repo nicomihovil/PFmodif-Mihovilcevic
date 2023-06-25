@@ -287,7 +287,7 @@ a:link {
     color: white;
     margin-top: 20px;
     padding-block: 10px;
-    font-size: 2vh;
+    font-size: 3vh;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -339,6 +339,7 @@ a:link {
 .studio-title {
   font-size: 1em;
   margin-bottom: 4vh;
+  margin-top: 3vh;
 }
 
 .studio-bottom-container {
@@ -412,7 +413,7 @@ a:link {
 
 @media only screen and (min-width: 375px) {
   .studio-text {
-    text-align: center;
+    text-align: justify;
     margin-top: 2vh;
   }
 }
@@ -464,7 +465,7 @@ a:link {
   background-color: #AD1D25;
   text-align: center;
   padding-block: 1vh;
-  font-size: 1em;
+  font-size: 0.7em;
   color: white;
   margin-bottom: 2vh;
 }
@@ -541,23 +542,35 @@ a, [item] {
   }
 }
 
-.contact-form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media only screen and (min-width: 375px) {
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact-input {
   margin-block: 2vh;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
 }
 @media only screen and (min-width: 375px) {
   .contact-input {
-    width: 60vh;
+    width: auto;
   }
 }
 @media only screen and (min-width: 1024px) {
   .contact-input {
-    width: 30vh;
+    width: auto;
   }
 }
 
@@ -567,6 +580,7 @@ a, [item] {
     flex-direction: column;
     margin-top: 6vh;
     margin-bottom: 4vh;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -574,6 +588,7 @@ a, [item] {
     display: flex;
     flex-direction: column;
     margin-top: 6vh;
+    width: 100%;
   }
 }
 
@@ -585,44 +600,59 @@ a, [item] {
     margin-inline: 7vh;
   }
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 1024px) {
   .contact-menu-container {
-    align-items: flex-start;
+    align-items: flex;
+    width: auto;
+    margin-top: 20vh;
   }
 }
 
-.contact-menu-title {
-  margin-bottom: 8vh;
-}
 @media only screen and (min-width: 375px) {
   .contact-menu-title {
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 5vh;
   }
 }
 @media only screen and (min-width: 1024px) {
   .contact-menu-title {
+    margin-bottom: 8vh;
     margin-inline: 0;
-    margin-top: 0;
+    margin-top: 1vh;
   }
 }
 
-.contact-menu {
-  list-style-type: none;
+@media only screen and (min-width: 375px) {
+  .contact-menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-menu {
+    display: list-item;
+    list-style-type: none;
+  }
 }
 
-.contact-textarea {
-  margin-block: 2vh;
-  resize: none;
-  border: none;
-  padding: 15px;
-  border-radius: 6px;
+@media only screen and (min-width: 375px) {
+  .contact-textarea {
+    margin-block: 2vh;
+    resize: none;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: auto;
+  }
 }
-
-.contact-input {
-  border: none;
-  padding: 15px;
-  border-radius: 6px;
+@media only screen and (min-width: 1024px) {
+  .contact-textarea {
+    margin-block: 2vh;
+    resize: none;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 375px) {

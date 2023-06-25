@@ -269,7 +269,7 @@ a:link {
     color: white;
     margin-top: 20px;
     padding-block: 10px;
-    font-size: 2vh;
+    font-size: 3vh;
   }
   @include large {
     background-color: #AD1D25;
@@ -317,6 +317,7 @@ a:link {
 .studio-title {
     font-size: 1em;
     margin-bottom: 4vh;
+    margin-top: 3vh;
 }
 
 .studio-bottom-container {
@@ -376,7 +377,7 @@ a:link {
 
 .studio-text {
   @include small {
-    text-align: center;
+    text-align: justify;
     margin-top: 2vh;
   }
   @include large {
@@ -422,7 +423,7 @@ a:link {
     background-color: #AD1D25;
     text-align: center;
     padding-block: 1vh;
-    font-size: 1em;
+    font-size: 0.7em;
     color: white;
     margin-bottom: 2vh;
 }
@@ -499,18 +500,28 @@ a,[item] {
 }
 
 .contact-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include small {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include large {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 }
 
 .contact-input {
     margin-block: 2vh;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
     @include small {
-      width: 60vh;
+      width: auto;
     }
     @include large {
-      width: 30vh;
+      width: auto;
     }
 }
 
@@ -520,11 +531,13 @@ a,[item] {
     flex-direction: column;
     margin-top: 6vh;
     margin-bottom: 4vh;
+    width: 100%;
   }
   @include large {
     display: flex;
     flex-direction: column;
     margin-top: 6vh;
+    width: 100%;
   }
 }
 
@@ -535,39 +548,52 @@ a,[item] {
     align-items: center;
     margin-inline: 7vh;
   }
-  @include small {
-    align-items: flex-start;
+  @include large {
+    align-items: flex;
+    width: auto;
+    margin-top: 20vh;
   }
 }
 
 .contact-menu-title {
-    margin-bottom: 8vh;
     @include small {
       text-align: center;
-      margin-top: 2vh;
+      margin-top: 5vh;
     }
     @include large {
+      margin-bottom: 8vh;
       margin-inline: 0;
-      margin-top: 0;
+      margin-top: 1vh;
     }
 }
 
 .contact-menu {
+  @include small{
+    display: none;
+  }
+  @include large{
+    display: list-item;
     list-style-type: none;
+  }
 }
 
 .contact-textarea {
+  @include small{
     margin-block: 2vh;
     resize: none;
     border: none;
     padding: 15px;
     border-radius: 6px;
-}
-
-.contact-input { 
+    width: auto;    
+  }
+  @include large {
+    margin-block: 2vh;
+    resize: none;
     border: none;
     padding: 15px;
     border-radius: 6px;
+    width: auto;
+  }
 }
 
 .contact-submit {
