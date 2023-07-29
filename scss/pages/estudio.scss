@@ -1,0 +1,109 @@
+@import "../mixins";
+@import "../colors";
+
+.studio-container {
+  @include small {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4vh;
+    padding-inline: 10vh;
+  }
+  @include large {
+    display: flex;
+    flex-direction: row;
+    padding: 4vh;
+    padding-inline: 8vh;
+    align-items: center;
+  }
+}
+
+.studio-title-container {
+  @include small {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.studio-left-container {
+  @include large {
+    margin-right: 16vh;
+  }
+}
+
+.studio-title {
+  font-size: 1em;
+  margin-bottom: 4vh;
+  margin-top: 3vh;
+}
+
+.studio-bottom-container {
+  display: flex;
+  @include small {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include large {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8vh;
+    align-items: flex-start;
+  }
+}
+
+.studio-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include small {
+    width: 100%;
+    margin-top: 6vh;
+  }
+  @include large {
+    width: 25%;
+  }
+}
+
+.studio-button {
+  background-color: var(--primary-color);
+  margin-bottom: 2vh;
+  font-size: 0.8em;
+  color: white;
+  border-radius: 10px;
+  @include small {
+    padding-inline: 6.5vh;
+    padding-block: 1.5vh;
+  }
+  @include large {
+    padding-inline: 1.5vh;
+    padding-block: 1vh;
+  }
+}
+
+.studio-list {
+  @include small {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 2vh;
+  }
+  @include large {
+    text-align: left;
+    list-style-type: circle;
+  }
+}
+
+.studio-text {
+  @include small {
+    text-align: justify;
+    margin-top: 2vh;
+  }
+  @include large {
+    text-align: justify;
+  }
+}
+
+.studio-image {
+  width: 30%;
+}

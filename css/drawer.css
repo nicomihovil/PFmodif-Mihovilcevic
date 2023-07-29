@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #ad1d25;
+}
+
 @media only screen and (min-width: 375px) {
   #drawer-container {
     visibility: visible;
@@ -20,7 +24,7 @@
   height: 50px;
   width: 50px;
   position: fixed;
-  background: #AD1D25;
+  background: var(--primary-color);
   border-radius: 25px;
   z-index: 1;
 }
@@ -42,7 +46,7 @@
   left: -350px;
   height: 100%;
   width: 250px;
-  background: #AD1D25;
+  background: var(--primary-color);
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 20px;

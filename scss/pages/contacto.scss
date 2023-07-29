@@ -1,0 +1,81 @@
+@import "../mixins";
+@import "../colors";
+
+.submit-button {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+  padding-inline: 6vh;
+}
+
+.contact-menu-container {
+  @include small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 7vh;
+  }
+  @include large {
+    align-items: flex;
+    width: auto;
+    margin-top: 20vh;
+  }
+}
+
+.contact-menu-title {
+  @include small {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  @include large {
+    margin-bottom: 8vh;
+    margin-inline: 0;
+    margin-top: 1vh;
+  }
+}
+
+.contact-menu {
+  list-style: none;
+}
+
+.contact-textarea {
+  @include small {
+    margin-block: 2vh;
+    resize: none;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: auto;
+  }
+  @include large {
+    margin-block: 2vh;
+    resize: none;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: auto;
+  }
+}
+
+.contact-submit {
+  @include small {
+    background-color: var(--primary-color);
+    padding-block: 2.5vh;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    padding-inline: 10vh;
+    color: white;
+    margin-top: 4vh;
+    align-self: center;
+  }
+  @include large {
+    background-color: var(--primary-color);
+    padding-block: 1.5vh;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    max-width: fit-content;
+    padding-inline: 4vh;
+    color: white;
+    margin-top: 4vh;
+    align-self: center;
+  }
+}

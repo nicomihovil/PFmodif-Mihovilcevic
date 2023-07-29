@@ -1,4 +1,5 @@
-@use  './mixins.scss' as *;
+@import './mixins'; 
+@import './colors'; 
 
 #drawer-container {
   @include small {
@@ -8,13 +9,6 @@
     visibility: hidden;
   }
 }
-
-// * {
-//   -webkit-transition: 0.25s ease-in-out;
-//   -moz-transition: 0.25s ease-in-out;
-//   -o-transition: 0.25s ease-in-out;
-//   transition: 0.25s ease-in-out;
-// }
 
 #drawer-toggle {
   position: absolute;
@@ -27,7 +21,7 @@
   height: 50px;
   width: 50px;
   position: fixed;
-  background: #AD1D25;
+  background: var(--primary-color);
   border-radius: 25px;
   z-index: 1;
 }
@@ -49,7 +43,7 @@
   left: -350px;
   height: 100%;
   width: 250px;
-  background: #AD1D25;
+  background: var(--primary-color);
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 20px;

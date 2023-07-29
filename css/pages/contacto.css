@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #ad1d25;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+  padding-inline: 6vh;
+}
+
+@media only screen and (min-width: 375px) {
+  .contact-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 7vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-menu-container {
+    align-items: flex;
+    width: auto;
+    margin-top: 20vh;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .contact-menu-title {
+    text-align: center;
+    margin-top: 5vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-menu-title {
+    margin-bottom: 8vh;
+    margin-inline: 0;
+    margin-top: 1vh;
+  }
+}
+
+.contact-menu {
+  list-style: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .contact-textarea {
+    margin-block: 2vh;
+    resize: none;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-textarea {
+    margin-block: 2vh;
+    resize: none;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .contact-submit {
+    background-color: var(--primary-color);
+    padding-block: 2.5vh;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    padding-inline: 10vh;
+    color: white;
+    margin-top: 4vh;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-submit {
+    background-color: var(--primary-color);
+    padding-block: 1.5vh;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    max-width: fit-content;
+    padding-inline: 4vh;
+    color: white;
+    margin-top: 4vh;
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=contacto.css.map */

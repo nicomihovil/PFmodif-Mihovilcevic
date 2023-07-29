@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #ad1d25;
+}
+
+@media only screen and (min-width: 375px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 4vh;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .services-vertical-container {
+    width: 60%;
+    margin-top: 4vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .services-vertical-container {
+    width: 30%;
+  }
+}
+
+.services-item-title {
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding-block: 1vh;
+  font-size: 0.7em;
+  color: white;
+  margin-bottom: 2vh;
+}
+
+.services-item-list {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=servicios.css.map */
